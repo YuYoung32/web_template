@@ -1,0 +1,11 @@
+.idea
+
+#/tmp
+
+# air热重载
+#*.exe
+#.air.toml
+
+# 生产环境隐私
+#conf/config.yaml
+#*.log

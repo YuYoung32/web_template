@@ -1,0 +1,47 @@
+# mysql 配置 用于存储访问和短链信息
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: password
+  database: db_name
+
+redis:
+  host: localhost
+  port: 6379
+  password: password
+  db: 0
+
+mode: release # dev, release
+
+# dev配置会覆盖其他命名空间的配置
+dev:
+  mysql:
+    host: localhost
+    port: 3306
+    username: root
+    password: password
+    database: db_name
+  redis:
+    host: localhost
+    port: 6379
+    password: password
+    db: 0
+
+
+# 本服务将会监听什么地址和端口
+server:
+  host: 0.0.0.0
+  port: 8080
+
+# log等级和存储地址
+log:
+  level: info # debug, info, warn, error, fatal, panic
+  path: ./log
+
+# jwt token
+auth:
+  jwt:
+    expire: 1 # 单位小时
+    secret: signature # jwt服务器签名
+    issuer: short_link_sys # jwt签发者
