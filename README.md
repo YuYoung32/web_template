@@ -10,6 +10,7 @@
 * CORS中间件
 
 下一步（由copilot生成）：
+* github actions
 * 支持swagger
 * 支持docker
 * 支持k8s
